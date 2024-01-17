@@ -18,6 +18,7 @@ Default: 1
 
 - Tints: 
 #fdf2e9
+#eb984e
 
 - Shades: 
 #cf711f
@@ -98,6 +99,7 @@ body {
 	letter-spacing: 0.75;	
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -106,6 +108,11 @@ body {
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
+
+	/* only for button elemenet */
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
 
     transition: all 0.3s;
 }
@@ -125,6 +132,13 @@ body {
 .btn--outline:visited {
     background-color: #fff;
     color: #333;
+}
+
+.btn--form {
+	background-color: #45260a;
+	color: #fdf2e9;
+	align-self: end;
+	padding: 1.2rem;
 }
 
 .btn--outline:hover,
