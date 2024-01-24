@@ -123,7 +123,7 @@ body {
 }
 
 .heading-secondary {
-	font-size: 3.6rem;
+	font-size: 4.4rem;
 	line-height: 1.2;
 	margin-bottom: 9.6rem;
 }
@@ -181,6 +181,7 @@ body {
 .link:link,
 .link:visited {
 	display: inline-block;
+	font-size: 1.6rem;
 	color: #e67e22;
 	text-decoration: none;
 	border-bottom: 1px solid currentColor;
