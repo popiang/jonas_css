@@ -218,6 +218,19 @@ body {
 	border-bottom: 1px solid transparent;
 }
 
+.footer-link:link,
+.footer-link:visited {
+	text-decoration: none;
+	color: #767676;
+	font-size: 1.6rem;
+	transition: all 0.3;
+}
+
+.footer-link:hover,
+.footer-link:active {
+	color: #555;
+}
+
 .list {
 	list-style: none;
 	display: flex;
