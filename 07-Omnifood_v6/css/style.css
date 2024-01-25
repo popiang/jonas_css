@@ -212,18 +212,18 @@
 
 .meal {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-	border-radius: 11px;
+    border-radius: 11px;
     overflow: hidden;
-	transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .meal:hover {
-	transform: translateY(-1.2rem);
-	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-img {
-	width: 100%;
+    width: 100%;
 }
 
 .meal-content {
@@ -231,9 +231,9 @@
 }
 
 .meal-tags {
-	margin-bottom: 1.2rem;
-	display: flex;
-	gap: 0.4rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
 }
 
 .tag {
@@ -286,7 +286,7 @@
 }
 
 .all-recipes {
-	text-align: center;
+    text-align: center;
 }
 
 /* ******************* */
@@ -294,60 +294,60 @@
 /* ******************* */
 
 .section-testimonials {
-	background-color: #fdf2e9;
-	display: grid;
-	grid-template-columns: 55fr 45fr;
-	align-items: center;
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
 }
 
 .testimonials-container {
-	padding: 9.6rem;
+    padding: 9.6rem;
 }
 
 .testimonials {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	row-gap: 4.8rem;
-	column-gap: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
 }
 
 .testimonial-img {
-	display: block;
-	width: 6.4rem;
-	border-radius: 50%;
-	margin-bottom: 1.2rem;
+    display: block;
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
 }
 
 .testimonial-text {
-	font-size: 1.8rem;
-	line-height: 1.8;
-	margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
 }
 
 .testimonial-name {
-	font-size: 1.6rem;
-	color: #6f6f6f;
+    font-size: 1.6rem;
+    color: #6f6f6f;
 }
 
 .gallery {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1.6rem;
-	padding: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
 }
 
 .gallery-item {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .gallery-item img {
-	display: block;
-	width: 100%;
-	transition: all 0.4s;
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
 }
 
 .gallery-item img:hover {
-	transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* ******************* */
@@ -355,100 +355,176 @@
 /* ******************* */
 
 .section-pricing {
-	padding: 9.6rem 0;
+    padding: 9.6rem 0;
 }
 
 .pricing-plans {
-	width: 75%;
-	padding: 4.8rem;
-	border-radius: 11px;
+    width: 75%;
+    padding: 4.8rem;
+    border-radius: 11px;
 }
 
 .pricing-plan--starter {
-	border: 2px solid #fdf2e9;
-	justify-self: end;
+    border: 2px solid #fdf2e9;
+    justify-self: end;
 }
 
 .pricing-plan--complete {
-	background-color: #fdf2e9;
-	position: relative;
-	overflow: hidden;
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden;
 }
 
 .pricing-plan--complete::after {
-	content: "Best value";
-	background-color: #ffd43b;;
-	padding: 0.8rem 6.8rem;
-	position: absolute;
-	top: 7%;
-	right: -16%;
-	font-size: 1.6rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	transform: rotate(45deg);
+    content: "Best value";
+    background-color: #ffd43b;
+    padding: 0.8rem 6.8rem;
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: rotate(45deg);
 }
 
 .plan-header {
-	margin-bottom: 4.8rem;
-	text-align: center;
+    margin-bottom: 4.8rem;
+    text-align: center;
 }
 
 .plan-name {
-	font-size: 2rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #cf711f;
-	margin-bottom: 3.2rem;
-	letter-spacing: 0.75;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cf711f;
+    margin-bottom: 3.2rem;
+    letter-spacing: 0.75;
 }
 
 .plan-price {
-	font-size: 6.2rem;
-	font-weight: 600;
-	color: #333;
-	margin-bottom: 2.4rem;
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2.4rem;
 }
 
 .plan-price span {
-	font-size: 3.2rem;
-	font-weight: 500;
-	margin-right: 0.8rem;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
 }
 
 .plan-text {
-	font-size: 1.6rem;
-	color: #6f6f6f;
+    font-size: 1.6rem;
+    color: #6f6f6f;
 }
 
 .plan-signup {
-	margin-top: 4.8rem;
-	text-align: center;
+    margin-top: 4.8rem;
+    text-align: center;
 }
 
 .plan-details {
-	text-align: center;
-	font-size: 1.6rem;
-	/* fontruytgfyjdrrkrt tutyer */
+    text-align: center;
+    font-size: 1.6rem;
+    /* fontruytgfyjdrrkrt tutyer */
 }
 
 .feature-icon {
-	height: 3.2rem;
-	width: 3.2rem;
-	padding: 1.6rem;
-	background-color: #fdf2e9;
-	color: #e67e22;
-	border-radius: 50%;
-	margin-bottom: 3.2rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    padding: 1.6rem;
+    background-color: #fdf2e9;
+    color: #e67e22;
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
 }
 
 .feature-title {
-	font-size: 2.4rem;
-	font-weight: 700;
-	color: #333;
-	margin-bottom: 1.6rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
 }
 
 .feature-text {
-	font-size: 1.8rem;
-	line-height: 1.8;
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/* ******************* */
+/* CTA                 */
+/* ******************* */
+
+.section-cta {
+    padding: 4.8rem 0;
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
+}
+
+.cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+}
+
+.cta-text-box .heading-secondary {
+    margin-bottom: 3.2rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+}
+
+.cta-form label,
+.cta-form input,
+.cta-form select {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: inherit;
+    padding: 1.2rem;
+    border-radius: 9px;
+    border: none;
+    font-size: 1.8rem;
+}
+
+.cta-form input::placeholder {
+    color: #aaa;
+}
+
+.cta-form label {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    padding: 0;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 151, 78, 0.35),
+            rgba(230, 125, 34, 0.35)
+        ),
+        url("/img/eating.jpg");
+    background-size: cover;
+    background-position: center;
 }
