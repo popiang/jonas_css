@@ -69,6 +69,11 @@ body {
 	font-family: "Rubik", sans-serif;
 }
 
+*:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
 /* ********************* */
 /* REUSABLE COMPONENTS 	 */
 /* ********************* */
@@ -192,7 +197,7 @@ strong {
 
 .btn--form:hover {
 	background-color: #fff;
-	color: #333;
+	color: ;
 }
 
 .link:link,
