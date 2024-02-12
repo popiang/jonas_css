@@ -196,20 +196,20 @@
 /* ***************** */
 
 .section-meals {
-	padding: 9.6rem 0;
+    padding: 9.6rem 0;
 }
 
 .meal {
     border-radius: 9px;
     overflow: hidden;
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-	margin-bottom: 4.8rem;
-	transition: all 0.4s;
+    margin-bottom: 4.8rem;
+    transition: all 0.4s;
 }
 
 .meal:hover {
-	transform: translateY(-7px);
-	box-shadow: 0 3.2rem 5.2rem rgba(0, 0, 0, 0.075);
+    transform: translateY(-7px);
+    box-shadow: 0 3.2rem 5.2rem rgba(0, 0, 0, 0.075);
 }
 
 .meal-content {
@@ -276,31 +276,30 @@
 }
 
 .list {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	row-gap: 1.8rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
 }
 
 .list-item {
-	display: flex;
-	align-items: center;
-	column-gap: 1.6rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
 }
 
 .list-item span {
-	font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 .list-icon {
-	height: 3rem;
-	width: 3rem;
-	color: #e67e22;
+    height: 3rem;
+    width: 3rem;
+    color: #e67e22;
 }
 
 .all-recipes {
-	text-align: center;
-
+    text-align: center;
 }
 
 /* ***************** */
@@ -308,60 +307,60 @@
 /* ***************** */
 
 .section-testimonials {
-	background-color: #fdf2e9;
-	padding: 2rem 0;
-	display: grid;
-	grid-template-columns: 55% 45%;
-	align-items: center;
-	/* column-gap: 4.8rem; */
+    background-color: #fdf2e9;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    /* column-gap: 4.8rem; */
 }
 
 .testimonials-container {
-	padding: 0 9.6rem;
+    padding: 0 9.6rem;
 }
 
 .testimonials {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	row-gap: 4.8rem;
-	column-gap: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
 }
 
 .testimonial-img {
-	height: 6.4rem;
-	width: 6.4rem;
-	border-radius: 50%;
-	margin-bottom: 1.2rem;
+    height: 6.4rem;
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
 }
 
 .testimonial-text {
-	font-size: 1.8rem;
-	line-height: 1.8;
-	margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 2.4rem;
 }
 
 .testimonial-name {
-	font-size: 1.6rem;
-	color: #6f6f6f;
+    font-size: 1.6rem;
+    color: #6f6f6f;
 }
 
 .gallery {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
 }
 
 .gallery-item {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .gallery-item img {
-	width: 100%;
-	transition: all 0.4s;
+    width: 100%;
+    transition: all 0.4s;
 }
 
 .gallery-item img:hover {
-	transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* ***************** */
@@ -369,64 +368,141 @@
 /* ***************** */
 
 .section-pricing {
-	padding: 9.6rem 0;
+    padding: 9.6rem 0;
 }
 
 .pricing-plans {
-	width: 85%;
-	padding: 5.4rem 4.8rem;
-	border-radius: 11px;
+    width: 85%;
+    padding: 5.4rem 4.8rem;
+    border-radius: 11px;
 }
 
 .pricing-plan--starter {
-	border: 1px solid #fae5d3;
-	justify-self: end;
+    border: 1px solid #fae5d3;
+    justify-self: end;
 }
 
 .pricing-plan--complete {
-	background-color: #fdf2e9;
+    background-color: #fdf2e9;
 }
 
 .plan-header {
-	text-align: center;
-	margin-bottom: 5.4rem;
+    text-align: center;
+    margin-bottom: 5.4rem;
 }
 
 .plan-name {
-	font-size: 2rem;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #cf711f;
-	margin-bottom: 3.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #cf711f;
+    margin-bottom: 3.2rem;
 }
 
 .plan-price {
-	font-size: 6.4rem;
-	font-weight: 700;
-	margin-bottom: 2.4rem;
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
 }
 
 .plan-price span {
-	font-size: 3.2rem;
-	margin-right: 1rem;
+    font-size: 3.2rem;
+    margin-right: 1rem;
 }
 
 .plan-text {
-	font-size: 1.8rem;
-	font-weight: 400;
-	color: #6f6f6f;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #6f6f6f;
 }
 
 .list {
-	margin-bottom: 4.8rem;
+    margin-bottom: 4.8rem;
 }
 
 .plan-signup {
-	text-align: center;
+    text-align: center;
 }
 
 .plan-details {
-	text-align: center;
-	font-size: 1.8rem;
-	color: #6f6f6f;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #6f6f6f;
+}
+
+/* ***************** */
+/* CTA       		 */
+/* ***************** */
+
+.section-cta {
+    padding: 9.6rem 0;
+}
+
+.cta {
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    border-radius: 11px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.cta *:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.cta-text-box {
+    padding: 4.8rem;
+    color: #45260a;
+}
+
+.cta-text-box .heading-secondary {
+    color: #333;
+    margin-bottom: 4.8rem;
+}
+
+.cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 3.2rem;
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+    column-gap: 3.2rem;
+}
+
+.cta-form label,
+.cta-form input,
+.cta-form select {
+    display: block;
+    font-family: inherit;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: 9px;
+}
+
+.cta-form label {
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    padding: 0;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+.cta-img-box {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 151, 78, 0.35),
+            rgba(230, 125, 34, 0.35)
+        ),
+        url("../img/eating.jpg");
+    background-position: center;
+    background-size: cover;
 }
