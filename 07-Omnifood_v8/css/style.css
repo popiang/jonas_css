@@ -364,3 +364,69 @@
 	transform: scale(1.2);
 }
 
+/* ***************** */
+/* PRICING  		 */
+/* ***************** */
+
+.section-pricing {
+	padding: 9.6rem 0;
+}
+
+.pricing-plans {
+	width: 85%;
+	padding: 5.4rem 4.8rem;
+	border-radius: 11px;
+}
+
+.pricing-plan--starter {
+	border: 1px solid #fae5d3;
+	justify-self: end;
+}
+
+.pricing-plan--complete {
+	background-color: #fdf2e9;
+}
+
+.plan-header {
+	text-align: center;
+	margin-bottom: 5.4rem;
+}
+
+.plan-name {
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #cf711f;
+	margin-bottom: 3.2rem;
+}
+
+.plan-price {
+	font-size: 6.4rem;
+	font-weight: 700;
+	margin-bottom: 2.4rem;
+}
+
+.plan-price span {
+	font-size: 3.2rem;
+	margin-right: 1rem;
+}
+
+.plan-text {
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: #6f6f6f;
+}
+
+.list {
+	margin-bottom: 4.8rem;
+}
+
+.plan-signup {
+	text-align: center;
+}
+
+.plan-details {
+	text-align: center;
+	font-size: 1.8rem;
+	color: #6f6f6f;
+}
