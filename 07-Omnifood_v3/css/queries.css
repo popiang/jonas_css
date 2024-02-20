@@ -1,0 +1,231 @@
+/* below 1344px */
+@media (max-width: 84em) {
+    /* make it the same width with the rest of below section */
+    .hero {
+        max-width: 120rem;
+    }
+
+    /* it's a bit to big, make it a bit smaller */
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+
+    /* a little to cramp, make it into 2 columsn */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* below 1200px */
+@media (max-width: 75em) {
+    /* makes everything a bit smaller */
+    html {
+        font-size: 56.25%;
+    }
+
+    /* side padding is a bit to big, lower it a bit */
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    /* the nav is smaller but the gap is still big, so reduce a bit */
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    /* the gap between hero-text-box and hero-img-box is a bit to big after the overall hero size is smaller, so lower the gap to half */
+    .hero {
+        gap: 4.8rem;
+    }
+
+    /* at this breakboint, the side paddings are a bit to much, making it squeezed to the middle, so lower it a bit */
+    .testimonials-container {
+        padding: 9.6rem 3.2rem;
+    }
+
+    /* grid gap must also be reduced accordingly as overall size of the site is smaller */
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    /* heading secondary is a bit to big now, lower the size a bit */
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+
+    /* the same goes to heading tertiary */
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+}
+
+/* below 944px */
+@media (max-width: 59em) {
+    /* again, make everything smaller using font size */
+    html {
+        font-size: 50%;
+    }
+
+    /* it time to change hero into only 1 column, the add back the side padding so that it won't stick to close to the side, and add again the gap between hero-text-box and hero-img-box */
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    /* the img is now way to big, reduce the size */
+    .hero-img {
+        width: 60%;
+    }
+
+    /* now, it looks better when they are aligned to the center */
+    .hero-text-box,
+    .hero-img-box {
+        text-align: center;
+    }
+
+    /* everything is text align center, so must the delivered meals, then reduce the top margin to remove the ambigous spacing */
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    /* it is time to reduce the size of featured in logos image */
+    .logos img {
+        height: 2.4rem;
+    }
+
+    /* reduct the step number a bit as everything else is smaller now */
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    /* reduce the overall padding */
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    /* as the overall width is lower now, it's time to change this part into only 1 column */
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    /* the gallery is arranged into 6 columns grid, so it looks better */
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /* the image in the cta is a bit squeezed not, so change the grid template columns to give it a bit more space */
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    /* change the cta form into only 1 column to make it looks better */
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+
+    /* the bottom looks to close to it's above field, so add a litter margin bottom to add more space between them */
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+    /* MOBILE NAVIGATION */
+
+	/* display the mobile button when max-width 59em */
+    .btn-mobile-nav {
+        display: block;
+    }
+
+	/* cover the whole screen with white back ground with the menu in the center of the page vertically, but set to be hidden initially */
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.909);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* hide navigation */
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+	/* when the class nav-open is available, the above main-nav is displayed */
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+	/* hide burger menu when nav-open class is available, illustrating that the mobile menu button has been clicked */
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+	/* display the close outline button when the mobile menu is displayed */
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+	/* mobile menu is vertically aligned */
+    .main-nav-list {
+        flex-direction: column;
+        row-gap: 4.8rem;
+    }
+
+	/* font size is enlarged because the menu is intended for mobile view */
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
+}
+
+/* below 704px */
+@media (max-width: 44em) {
+	/* at this width, all 3 & 4 columns grid are changed to only 2 columns */
+	.grid--3-cols,
+	.grid--4-cols {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/* this part is spanned to 2 columns so it can be justify to center */
+	.diets {
+		grid-column: span 2;
+		justify-self: center;
+	}
+
+	/* reduce the margin bottom a bit */
+	.heading-secondary {
+		margin-bottom: 4.8rem;
+	}
+
+	/* the cards are to squeezed now, so release the width back to 100% to make them look better */
+	.pricing-plans {
+		width: 100%;
+	}
+
+	/* the idea is, break footer into 6 columns grid, put the nav-col to the top by spanning each nav-col to 2 columns and set the column-grid to 1 so it will be displayed first */
+	.grid--footer {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	/* these 2 will be spanned to 3 columns, so the content will be distributed evenly */
+	.logo-col,
+	.address-col {
+		grid-column: span 3;
+	}
+
+	/* read above comments */
+	.nav-col {
+		grid-row: 1;
+		grid-column: span 2;
+		margin-bottom: 3.2rem;
+	}
+}
