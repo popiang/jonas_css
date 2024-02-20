@@ -1,4 +1,4 @@
-/* below 1344px */
+/* below 1344px (smaller desktop) */
 @media (max-width: 84em) {
     /* make it the same width with the rest of below section */
     .hero {
@@ -16,7 +16,7 @@
     }
 }
 
-/* below 1200px */
+/* below 1200px (landscape tablet) */
 @media (max-width: 75em) {
     /* makes everything a bit smaller */
     html {
@@ -60,7 +60,7 @@
     }
 }
 
-/* below 944px */
+/* below 944px (tablet) */
 @media (max-width: 59em) {
     /* again, make everything smaller using font size */
     html {
@@ -133,12 +133,12 @@
 
     /* MOBILE NAVIGATION */
 
-	/* display the mobile button when max-width 59em */
+    /* display the mobile button when max-width 59em */
     .btn-mobile-nav {
         display: block;
     }
 
-	/* cover the whole screen with white back ground with the menu in the center of the page vertically, but set to be hidden initially */
+    /* cover the whole screen with white back ground with the menu in the center of the page vertically, but set to be hidden initially */
     .main-nav {
         background-color: rgba(255, 255, 255, 0.909);
         position: absolute;
@@ -146,6 +146,8 @@
         left: 0;
         width: 100%;
         height: 100vh;
+
+		transform: translateX(100%);
 
         display: flex;
         align-items: center;
@@ -157,75 +159,162 @@
         visibility: hidden;
     }
 
-	/* when the class nav-open is available, the above main-nav is displayed */
+    /* when the class nav-open is available, the above main-nav is displayed */
     .nav-open .main-nav {
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
+
+		transform: translateX(0);
     }
 
-	/* hide burger menu when nav-open class is available, illustrating that the mobile menu button has been clicked */
+    /* hide burger menu when nav-open class is available, illustrating that the mobile menu button has been clicked */
     .nav-open .icon-mobile-nav[name="menu-outline"] {
         display: none;
     }
 
-	/* display the close outline button when the mobile menu is displayed */
+    /* display the close outline button when the mobile menu is displayed */
     .nav-open .icon-mobile-nav[name="close-outline"] {
         display: block;
     }
 
-	/* mobile menu is vertically aligned */
+    /* mobile menu is vertically aligned */
     .main-nav-list {
         flex-direction: column;
         row-gap: 4.8rem;
     }
 
-	/* font size is enlarged because the menu is intended for mobile view */
+    /* font size is enlarged because the menu is intended for mobile view */
     .main-nav-link:link,
     .main-nav-link:visited {
         font-size: 3rem;
     }
 }
 
-/* below 704px */
+/* below 704px (smaller tablet) */
 @media (max-width: 44em) {
-	/* at this width, all 3 & 4 columns grid are changed to only 2 columns */
-	.grid--3-cols,
-	.grid--4-cols {
-		grid-template-columns: 1fr 1fr;
+    /* at this width, all 3 & 4 columns grid are changed to only 2 columns */
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* this part is spanned to 2 columns so it can be justify to center */
+    .diets {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    /* reduce the margin bottom a bit */
+    .heading-secondary {
+        margin-bottom: 4.8rem;
+    }
+
+    /* the cards are to squeezed now, so release the width back to 100% to make them look better */
+    .pricing-plans {
+        width: 100%;
+    }
+
+    /* the idea is, break footer into 6 columns grid, put the nav-col to the top by spanning each nav-col to 2 columns and set the column-grid to 1 so it will be displayed first */
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /* these 2 will be spanned to 3 columns, so the content will be distributed evenly */
+    .logo-col,
+    .address-col {
+        grid-column: span 3;
+    }
+
+    /* read above comments */
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+}
+
+/* below 544px (phone) */
+@media (max-width: 34em) {
+	/* as the grid are all now in one column only, we will reduce the row gap a little to make it looks better */
+	.grid {
+		row-gap: 4.8rem;
 	}
 
-	/* this part is spanned to 2 columns so it can be justify to center */
-	.diets {
-		grid-column: span 2;
-		justify-self: center;
+	/* in phone width all grid only have 1 column */
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+	/* make the button taller and shorter for phone view */
+    .btn,
+    .btn:link,
+    .btn:visited {
+		padding: 2.4rem 1.6rem;
+    }
+
+	/* reduce the top and bottom margin */
+	.section-hero {
+		padding: 2.4rem 0 6.4rem 0;
 	}
 
-	/* reduce the margin bottom a bit */
-	.heading-secondary {
-		margin-bottom: 4.8rem;
+	/* in phone view the side padding is reduced to fit the phone view size better */
+	.hero {
+		padding: 0 3.2rem;
 	}
 
-	/* the cards are to squeezed now, so release the width back to 100% to make them look better */
-	.pricing-plans {
-		width: 100%;
+	/* make the image bigger */
+	.hero-img {
+		width: 80%;
 	}
 
-	/* the idea is, break footer into 6 columns grid, put the nav-col to the top by spanning each nav-col to 2 columns and set the column-grid to 1 so it will be displayed first */
-	.grid--footer {
-		grid-template-columns: repeat(6, 1fr);
+	/* make images in section featured in smaller so all of them can fit perfectly in one line */
+	.logos img {
+		height: 1.2rem;
 	}
 
-	/* these 2 will be spanned to 3 columns, so the content will be distributed evenly */
-	.logo-col,
-	.address-col {
-		grid-column: span 3;
-	}
-
-	/* read above comments */
-	.nav-col {
+	/* set the phone image at the top */
+	.step-img-box:nth-child(2) {
 		grid-row: 1;
-		grid-column: span 2;
-		margin-bottom: 3.2rem;
+	}
+
+	/* set the phone image at the top */
+	.step-img-box:nth-child(6) {
+		grid-row: 5;
+	}
+
+	/* move the phone image closer to it's description to get rid of ambigous spacing */
+	.step-img-box {
+		transform: translateY(2.4rem);
+	}
+
+	/* the testimonials are also displayed in 1 column now */
+	.testimonials {
+		grid-template-columns: 1fr;
+	}
+
+	/* the gallery now display 4 pictures per row and it fits nicely */
+	.gallery {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.2rem;
+	}
+
+	/* cta now also only 1 column */
+	.cta {
+		grid-template-columns: 1fr;
+	}
+
+	/* reduce the padding to make the form looks better */
+	.cta-text-box {
+		padding: 3.2rem;
+	}
+
+	/* the lady picture is put at the top, and give some height as the picture is only a background for the div, without the hight the picture wont be visible */
+	.cta-img-box {
+		grid-row: 1;
+		height: 32rem;
 	}
 }
+
